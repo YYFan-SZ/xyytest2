@@ -23,7 +23,6 @@ export default function RootLayout({
       <body className={`font-sans antialiased`}>
         {children}
         {/* 仅在Vercel环境中启用Analytics */}
-        {/* <Analytics /> */}
         </body>
     </html>
   )
