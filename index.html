@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SRI 性压抑指数评估量表</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- 测试介绍页面 -->
+        <div id="intro-page" class="page active">
+            <div class="header-card">
+                <div class="heart-icon">❤</div>
+                <h1 class="title">SRI 性压抑指数评估量表报告</h1>
+                <p class="subtitle">Sexual Repression Index (SRI) Assessment</p>
+            </div>
+            
+            <div class="content-card">
+                <h2>测试说明</h2>
+                <p>性压抑指数（SRI）是一个专业的心理评估工具，用于了解个体在性相关话题、态度和行为方面的开放程度与压抑程度。</p>
+                
+                <div class="test-info">
+                    <h3>测试信息</h3>
+                    <ul>
+                        <li>题目数量：50题</li>
+                        <li>预计时间：8-10分钟</li>
+                        <li>评分方式：5级量表评分</li>
+                    </ul>
+                </div>
+                
+                <div class="attention-section">
+                    <h3>注意事项</h3>
+                    <p>请根据您的真实感受作答，没有对错之分</p>
+                    <p>请在安静、私密的环境中完成测试</p>
+                    <p>所有数据仅用于生成报告，不会被保存或分享</p>
+                    <p>建议一次性完成所有题目，中途退出将不保存进度</p>
+                </div>
+                
+                <div class="disclaimer">
+                    <p>本测试仅供参考，不能替代专业的心理咨询或医疗诊断。如有需要，请咨询专业心理健康工作者。</p>
+                </div>
+                
+                <button id="start-test-btn" class="primary-button">开始测试</button>
+            </div>
+        </div>
+
+        <!-- 测试问题页面 -->
+        <div id="questions-page" class="page">
+            <div class="content-card">
+                <div class="question-header">
+                    <h2 id="question-number">问题 <span>1</span>/50</h2>
+                    <div class="progress-bar">
+                        <div id="progress-fill" class="progress-fill" style="width: 2%;"></div>
+                    </div>
+                </div>
+                
+                <div class="question-content">
+                    <h3 id="question-text">这里将显示问题文本</h3>
+                    <div class="options-container">
+                        <!-- 选项将通过JavaScript动态生成 -->
+                    </div>
+                </div>
+                
+                <div class="navigation-buttons">
+                    <button id="prev-btn" class="secondary-button">上一题</button>
+                    <button id="next-btn" class="primary-button">下一题</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 测试结果页面 -->
+        <div id="results-page" class="page">
+            <div class="content-card">
+                <div class="results-header">
+                    <div class="heart-icon">❤</div>
+                    <h1 class="title">测试结果</h1>
+                    <div id="assessment-type" class="assessment-type">评估类型</div>
+                </div>
+                
+                <div class="score-card">
+                    <div class="score-section">
+                        <h3>您的分数</h3>
+                        <div id="score-value" class="total-score">0</div>
+                        <div class="score-range">得分范围：50-250</div>
+                    </div>
+                </div>
+                
+                <div class="assessment-details">
+                    <div class="details-section">
+                        <h3>评估说明</h3>
+                        <p id="assessment-description">这是评估说明的详细内容，根据您的得分提供个性化的描述。</p>
+                    </div>
+                    
+                    <div class="details-section">
+                        <h3>特征表现</h3>
+                        <ul id="characteristics-list">
+                            <li>特征一：描述内容</li>
+                            <li>特征二：描述内容</li>
+                            <li>特征三：描述内容</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="details-section">
+                        <h3>改善建议</h3>
+                        <ul id="suggestions-list">
+                            <li>建议一：描述内容</li>
+                            <li>建议二：描述内容</li>
+                            <li>建议三：描述内容</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="reference-section">
+                    <h3>分数区间参考</h3>
+                    <div class="reference-card">
+                        <div class="reference-item">
+                            <span class="range">50-90</span>
+                            <span class="type">保守型</span>
+                        </div>
+                        <div class="reference-item">
+                            <span class="range">91-130</span>
+                            <span class="type">谨慎型</span>
+                        </div>
+                        <div class="reference-item">
+                            <span class="range">131-170</span>
+                            <span class="type">平衡型</span>
+                        </div>
+                        <div class="reference-item">
+                            <span class="range">171-210</span>
+                            <span class="type">开放型</span>
+                        </div>
+                        <div class="reference-item">
+                            <span class="range">211-250</span>
+                            <span class="type">强度型</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <button id="restart-test-btn" class="primary-button">重新测试</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
